@@ -1,25 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
+    <!-- coté navigateur -->
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>titre de l'Onglet</title>
   </head>
-
   <body>
-    <!-- section presentation -->
-    <section>
-      <!-- todo: navigation -->
+    <nav>
       <a href="img.html" title="vers la page une"> lien vers la page img </a>
       <a href="form.html" title="vers la page formulaire">
         lien vers la page < form >
       </a>
+    </nav>
+    <!-- le body c'est la vue -->
+    <!-- section presentation -->
+    <section>
+      <!-- todo: navigation -->
+
+      <header>
+        <h1>unique</h1>
+      </header>
+      <section>
+        <h2>titre 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste nihil
+          quae est, cupiditate nostrum quibusdam voluptas placeat dolores atque
+          perspiciatis ex illo dolor labore hic enim, alias officia autem
+          soluta.
+        </p>
+      </section>
+
+      <h3>titre 3</h3>
+      <h4>titre 4</h4>
+      <h5>titre 5</h5>
+      <h6>titre 6</h6>
       <h2>Envoyer un mail</h2>
+
       <p>M'envoyer un <a href="mailto:blepage@cfitech.be">mail</a></p>
+
       <p style="color: red">enfants</p>
-      <p style="background-color: aqua; color: red">
+      <p style="background-color: #335c5c; color: rgb(83, 33, 33)">
+        <a href="https://www.w3schools.com/html/">tutorial HTML</a> <br />
+        <a
+          href="https://www.pierre-giraud.com/html-css-apprendre-coder-cours/structure-minimale-page/"
+          >page html basic</a
+        >
+        <br />
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br />
         Harum recusandae <strike>barré</strike> nam eos qui itaque ratione autem
         accusamus neque, <u>underline: sous ligner</u> officiis rem provident
@@ -29,7 +56,7 @@
     <hr />
     <section>
       <!-- Les titres -->
-      <h1 style="color: yellowgreen; text-align: center">titre H1</h1>
+      <h1 style="color: #324ecd; text-align: center">titre H1</h1>
 
       <p>
         Lorem <b>bold mais seulement pour la déco</b> dolor sit amet
@@ -39,16 +66,19 @@
         magnam accusamus sunt ducimus sapiente soluta nulla consectetur rem
         deleniti unde deserunt consequuntur voluptatem.
       </p>
-
       <h3>Les listes</h3>
       <h3>Ordered list</h3>
+
       <ol>
         <li>list item ordered</li>
         <li>
           <ol>
-            <li>item enfant</li>
-            <li>item enfant</li>
-            <li>item enfant</li>
+            <li>
+              Titre:
+              <ul>
+                <li>nom</li>
+              </ul>
+            </li>
           </ol>
         </li>
         <li>list item</li>
@@ -62,10 +92,42 @@
           <ul>
             <li>item</li>
             <li>item</li>
-            <li>item</li>
+            <li>
+              <ul>
+                <li>item</li>
+                <li>item</li>
+                <li>item</li>
+              </ul>
+            </li>
           </ul>
         </li>
       </ul>
     </section>
+
+    <section>
+      <h2>
+        Heritage <br />
+        <span>sous titre</span>
+      </h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit placeat
+        repellat
+        <i style="color: aquamarine"
+          >earum aspernatur minus modi magni, id quae ratione, facilis</i
+        >
+        ipsam? Ipsam ducimus, optio rem culpa amet ad repellat similique?
+      </p>
+      <ul>
+        <li>dfjdsghsdjghskjhfg</li>
+      </ul>
+    </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </body>
 </html>
