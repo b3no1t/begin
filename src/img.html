@@ -3,11 +3,84 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>< IMG ></title>
+    <link rel="stylesheet" href="./assets/css/img.css" />
+    <title>Les images</title>
   </head>
   <body>
-    <section>
-      <img src="./assets/img/instagram.png" alt="le lien a la con" />
-    </section>
+    <main>
+      <h1>Les images en html 🂥</h1>
+      <section>
+        <h2>img</h2>
+        <h3>legacy markup + rounded icon class</h3>
+        <div class="rounded">
+          <img src="./assets/img/smile-icon.png" alt="Description de l'image" />
+        </div>
+      </section>
+      <section>
+        <h2>IMG with pixel density Description</h2>
+        <ul>
+          <li>
+            Densité <strong>x1</strong> Playbook sur le BlackBerry, nombreux
+            écrans externes
+          </li>
+          <li>Densité <strong>x2</strong> iPad ou iPhone 5/6</li>
+          <li>Densité <strong>x3</strong> Galaxy S5 ou iPhone X</li>
+        </ul>
+        <ol>
+          <li>
+            <b>1x, 2x et 3x</b> sont tous des descripteurs de densité qui
+            indiquent au navigateur la densité de pixels à laquelle une image
+            est destinée. Le navigateur est alors enregistré d'avoir à
+            télécharger une image pour déterminer ces informations.
+          </li>
+          <li>
+            Le navigateur a le choix entre trois images: smile-icon.jpg ( pour
+            les navigateurs avec une densité de pixels de 1.0),
+            smile-icon@2x.jpg (destiné à les navigateurs avec une densité de
+            pixels de 2.0) et smile-icon@3x.jpg (destiné à avec une densité de
+            pixels de 3.0).
+          </li>
+          <li>
+            smile-icon.jpg est l'image de remplacement pour les navigateurs qui
+            ne prennent pas en charge srcset
+          </li>
+          <li>Exemple, ci dessous (code source)</li>
+        </ol>
+        <img
+          src="./assets/img/smile-icon.png"
+          srcset="
+            ./assets/img/smile-icon.png    1x,
+            ./assets/img/smile-icon@2x.png 2x,
+            ./assets/img/smile-icon@3x.png 3x
+          "
+          alt="icone smile"
+        />
+      </section>
+      <hr />
+      <section>
+        <h2>IMG with width descripteur</h2>
+        <ul>
+          <li>
+            ⚠️ N'enregistrez pas d'images plus grandes que leur taille
+            d'affichage.
+          </li>
+          <li>
+            Enregistrez plusieurs tailles pour chaque image et utilisez le
+            srcset pour permettre au navigateur de choisir la plus petite
+            valeur. La valeur <strong>w</strong> indique au navigateur la
+            largeur de chaque version d'image
+          </li>
+        </ul>
+        <img
+          src="./assets/img/smile-icon.png"
+          srcset="
+            ./assets/img/smile-icon.png     500w,
+            ./assets/img/smile-icon@2x.png 1000w,
+            ./assets/img/smile-icon@3x.png 1500w
+          "
+          alt="…"
+        />
+      </section>
+    </main>
   </body>
 </html>
