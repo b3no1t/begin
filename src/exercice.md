@@ -8,5 +8,7 @@
 
 ## Les images
 
-- faire une image responsive avec un descripteur de pixel
-- faire une image responsive avec un descripteur de largeur
+- faire une <img> responsive avec un descripteur de pixel
+- faire une <img> responsive avec un descripteur de largeur
+
+⚠️ 3 images par srcset
