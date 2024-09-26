@@ -8,10 +8,19 @@
     <link rel="stylesheet" href="assets/css/app.css" />
   </head>
   <body>
+    <header>
+      <nav class="menu">
+        <a href="img.html" title="vers la page une"> lien vers la page img </a>
+        <a href="form.html" title="vers la page formulaire">
+          lien vers la page < form >
+        </a>
+        <a href="./index.html">home</a>
+      </nav>
+    </header>
     <form id="form">
       <!-- L'élément fieldset représente un ensemble de contrôles de formulaires éventuellement regroupés sous un nom commun. -->
       <fieldset>
-        <legend>Groupe les champs (input) de localisation</legend>
+        <legend>localisation</legend>
         <div>
           <label for="city">Ville :</label>
           <input
@@ -131,13 +140,13 @@
         </label>
 
         <select name="glaces" id="glaces">
-          <option value=""></option>
-          <option value="vanilla">Vanilla</option>
+          <option value="toto">toto</option>
+          <option value="vanilla" selected>Vanilla</option>
           <option value="choco">Chocolate</option>
-          <option value="strawberry" selected>Strawberry</option>
+          <option value="strawberry">Strawberry</option>
         </select>
 
-        <div>Notez l'option blanche en premier choix. Pourquoi ?</div>
+        <div>Notez l'option vailla en premier choix. Pourquoi ?</div>
       </div>
       <hr />
       <fieldset>
@@ -177,7 +186,7 @@
           >Choisissez une couleur (de préférence un ton rouge) :</label
         >
         <input type="color" list="redColors" id="colors" />
-        <datalist id="redColors">
+        <datalist id="redColors" name="redColors">
           <option value="#800000"></option>
           <option value="#8B0000"></option>
           <option value="#A52A2A"></option>
@@ -187,17 +196,17 @@
 
       <fieldset>
         <label for="my_favorite_number"
-          >Mon nombre fétiche (de 0 à 1000) : <br />
-          0
+          >Tshirt price selection : <br />
+          0€
           <input
             type="range"
             name="my_favorite_number"
             id="my_favorite_number"
             value="0"
-            min="0"
-            max="1000"
+            min="0€"
+            max="100€"
           />
-          1000
+          <strong>100€</strong>
         </label>
       </fieldset>
 
