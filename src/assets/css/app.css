@@ -3,6 +3,7 @@
 * importation d'uatre fichier CSS
 */
 @import "./_form.css";
+@import "./_display.css";
 
 body{
  /* comportement de la hauteur et largeur 

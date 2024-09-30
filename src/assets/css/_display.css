@@ -1,0 +1,15 @@
+.container{
+ width: 768px;
+ margin: 0 auto;
+}
+
+.float-left{
+ float: left;
+}
+.float-right{
+ float: right;
+}
+img{
+ width: 350px;
+ height: auto;
+}
