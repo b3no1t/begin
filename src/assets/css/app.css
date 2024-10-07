@@ -1,9 +1,10 @@
 /*
 * Main Css, la css principale 
-* importation d'uatre fichier CSS
+* importation d'autre fichiers CSS
 */
 @import "./_form.css";
 @import "./_display.css";
+@import "./contact-card/contact-card.css" ;
 
 body{
  /* comportement de la hauteur et largeur 
@@ -11,7 +12,4 @@ body{
  */
  box-sizing: border-box;
  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.menu{
- font-size: 32px;
 }

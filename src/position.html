@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSITION</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .relative,
+      .container {
+        position: relative;
+        border: 1px solid green;
+        min-height: 100vh;
+      }
+      .absolute02 {
+        position: absolute;
+        background-color: lightblue;
+        width: 200px;
+        height: 250px;
+        opacity: 0.75;
+        top: 275px;
+        left: 355px;
+      }
+      .absolute01 {
+        position: absolute;
+        background-color: lightcoral;
+        width: 125px;
+        height: 125px;
+        opacity: 0.75;
+        top: 250px;
+        left: 340px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="absolute01">01</div>
+        <div class="absolute02">02</div>
+      </div>
+    </div>
+  </body>
+</html>

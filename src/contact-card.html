@@ -4,42 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact card</title>
-    <link rel="stylesheet" href="./assets/css/contact-card/contact-card.css" />
+    <!-- ⚠️ CSS -->
+    <link rel="stylesheet" href="./assets/css/app.css" />
   </head>
+
   <body>
     <div class="global">
-      <section class="home" id="home">
-        <div class="portrait__container">
-          <div class="portrait"></div>
-        </div>
-        <div class="home-text">
-          <h4 class="h4 tac">Hello</h4>
-          <h1 class="h1">
-            I'm Geek <br />
-            <span>101</span>
-          </h1>
-          <h3>Software Developer and Programming Enthusiast</h3>
-          <a aria-label="resume" href="#" class="btn" target="_blank"
-            >Download Resume</a
-          >
-        </div>
-
+      <div class="header">
         <nav>
           <ul class="menu">
-            <li>
+            <li class="menu__item">
               <a href="#home">home</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#details">details</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#experiences">experiences</a>
             </li>
-            <li>
+            <li class="menu__item">
               <a href="#trainings">trainings</a>
             </li>
           </ul>
         </nav>
+      </div>
+
+      <section class="home" id="home">
+        <div class="portrait__container">
+          <div class="portrait"></div>
+          <div class="content">
+            <div>
+              <h4 class="h4">MY NAME IS</h4>
+              <h1 class="h1">となりのトト</h1>
+              <h3>
+                Programming Enthusiast and forest spirit at night,
+                <a
+                  aria-label="resume"
+                  href="#"
+                  class="btn btn__cta"
+                  target="_blank"
+                  >Download Resume</a
+                >
+              </h3>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="details wrapper" id="details">
@@ -134,12 +143,213 @@
       </section>
       <section class="experiences" id="experiences">
         <h2>Experiences</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
+          recusandae et quasi beatae deleniti est explicabo tempora debitis
+          quaerat alias quas accusantium minus placeat dolore voluptatum, ad nam
+          expedita consequatur!
+        </p>
       </section>
-      <section class="trainings" id="trainings"><h2>Trainings</h2></section>
-      <section class="skills" id="skills"><h2>Skills</h2></section>
-      <section class="interests" id="interests"><h2>interest</h2></section>
+      <section class="trainings" id="trainings">
+        <!-- ---------------- -->
+        <section class="c-creator" id="about-vitaly">
+          <div class="c-creator__wrapper u-wrap">
+            <header class="c-creator__header u-flow--m">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="140"
+                height="79"
+                viewBox="0 0 140 79"
+              >
+                <defs>
+                  <style>
+                    .bb58faa2-17c7-4362-8801-b5804a5a7a28,
+                    .eb8869b3-a8b5-4789-a147-c77c8d887def,
+                    .f0d95a97-7594-4692-90bb-5c751049101b,
+                    .fe5a5bb0-73ff-41df-8f1e-cc5db50a9da5 {
+                      fill: none;
+                      stroke-miterlimit: 10;
+                    }
+
+                    .bb58faa2-17c7-4362-8801-b5804a5a7a28,
+                    .eb8869b3-a8b5-4789-a147-c77c8d887def {
+                      stroke: #fff8ec;
+                    }
+
+                    .bb58faa2-17c7-4362-8801-b5804a5a7a28,
+                    .eb8869b3-a8b5-4789-a147-c77c8d887def,
+                    .f0d95a97-7594-4692-90bb-5c751049101b,
+                    .fe5a5bb0-73ff-41df-8f1e-cc5db50a9da5 {
+                      stroke-linecap: round;
+                    }
+
+                    .bb58faa2-17c7-4362-8801-b5804a5a7a28,
+                    .f0d95a97-7594-4692-90bb-5c751049101b {
+                      stroke-width: 2px;
+                    }
+
+                    .f0d95a97-7594-4692-90bb-5c751049101b,
+                    .fe5a5bb0-73ff-41df-8f1e-cc5db50a9da5 {
+                      stroke: #82cdb2;
+                    }
+                  </style>
+                </defs>
+                <g id="f034a11a-4d33-4bb1-b8a2-d7d3d57be262" data-name="spark">
+                  <path
+                    class="bb58faa2-17c7-4362-8801-b5804a5a7a28"
+                    d="M97.65 5v4.55M97.65 19.14v4.55M107 14.34h-4.56M92.86 14.34H88.3"
+                  ></path>
+                  <path
+                    class="eb8869b3-a8b5-4789-a147-c77c8d887def"
+                    d="M116.65 33v2.11M116.65 39.57v2.12M121 37.34h-2.12M114.42 37.34h-2.12"
+                  ></path>
+                </g>
+                <g
+                  id="f9d83552-2558-431a-b5da-065af031a3c2"
+                  data-name="chef-hat"
+                >
+                  <path
+                    d="M84.71 29.53a17.76 17.76 0 00-22.71-17A17.72 17.72 0 0029.54 12a19 19 0 00-2.84-.22 17.72 17.72 0 00-1.61 35.37V77h42.29V47.24a17.72 17.72 0 0017.33-17.71z"
+                    stroke-linejoin="round"
+                    stroke="#82cdb2"
+                    fill="#fff8ec"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                  ></path>
+                  <path
+                    class="fe5a5bb0-73ff-41df-8f1e-cc5db50a9da5"
+                    d="M37.05 52.85v23.98M46.41 52.85v23.98M55.78 52.85v23.98"
+                  ></path>
+                </g>
+                <g
+                  id="b417e89f-7035-4f35-9eac-06270ae94a9f"
+                  data-name="clock"
+                  stroke="#ee5b68"
+                  stroke-linecap="round"
+                >
+                  <path
+                    fill="#ffa18f"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M86.42 44.78H67.95l-9.24 16 9.24 16h18.47l9.24-16-9.24-16z"
+                  ></path>
+                  <path
+                    fill="none"
+                    stroke-miterlimit="10"
+                    d="M75.83 53.59v8.54h7.64"
+                  ></path>
+                </g>
+                <g
+                  id="e98fcba1-87e9-42bf-80c6-d41eb3ea1429"
+                  data-name="baseline"
+                >
+                  <path
+                    class="f0d95a97-7594-4692-90bb-5c751049101b"
+                    d="M2.07 77.22h117.64M128.36 77.22h9.71"
+                  ></path>
+                </g>
+              </svg>
+
+              <h1 class="c-h c-h-6">
+                Smart Interface Design Patterns, curated by yours truly chef in
+                charge, Vitaly Friedman.
+              </h1>
+            </header>
+
+            <figure class="c-creator__image">
+              <picture>
+                <source
+                  type="image/png"
+                  srcset="./assets/img/smile-icon@2.png 540w"
+                  media="(max-width: 750px)"
+                  sizes="(max-width: 750px) 100vw, 100vw"
+                />
+                <source
+                  type="image/png"
+                  srcset="./assets/img/smile-icon.png 940w"
+                  media="(min-width: 750px)"
+                  sizes="(min-width: 750px) 100vw, 100vw"
+                />
+                <source
+                  srcset="./assets/img/smile-icon.png 540w"
+                  media="(max-width: 750px)"
+                  sizes="(max-width: 750px) 100vw, 100vw"
+                />
+                <source
+                  srcset="./assets/img/smile-icon@3.png 940w"
+                  media="(min-width: 750px)"
+                  sizes="(min-width: 750px) 100vw, 100vw"
+                />
+                <img
+                  src="./assets/img/smile-icon.png"
+                  width="800"
+                  height="800"
+                  loading="lazy"
+                  alt="smile sitting at a computer desk with a cup of coffee"
+                />
+              </picture>
+            </figure>
+
+            <div class="c-creator__content o-prose o-prose--primary-links">
+              <p>
+                My name is
+                <a
+                  href="https://www.smashingmagazine.com/author/vitaly-friedman/"
+                  >Vitaly</a
+                >, and over the last 15 years, I’ve been scouting the web for
+                <strong>reliable interface design patterns</strong>. I was
+                honored to be involved in design and testing first-hand,
+                studying solutions that worked well or failed miserably. All
+                these <strong>learnings and insights</strong> from all these
+                years are now collected in this video course.
+              </p>
+              <p>
+                Over the years, I was wearing many hats, as designer and as
+                developer, being involved in UX, interface design, usability
+                testing and performance optimization.
+              </p>
+              <p>
+                I love our wonderful community, and so love writing
+                <a
+                  href="https://www.smashingmagazine.com/author/vitaly-friedman/"
+                  >articles about the web</a
+                >, speaking, workshopping and teaching. I’m the editor-in-chief
+                and creative lead of
+                <a href="https://www.smashingmagazine.com">Smashing Magazine</a
+                >. In my <em>spare</em> time, I’m a front-end &amp; UX
+                consultant in Europe and abroad, working with big and small
+                companies and organizations, such as European Parliament,
+                Haufe-Lexware, Axel-Springer and others.
+              </p>
+              <p>
+                <a href="https://www.twitter.com/vitalyf">Twitter</a> —
+                <a href="https://www.linkedin.com/in/vitalyfriedman/"
+                  >LinkedIn</a
+                >
+              </p>
+              <p>
+                <a
+                  class="c-h c-button u-link u-link-highlight u-link-highlight--orange c-button--shadow c-button--shadow-orange"
+                  href="mailto:vitaly@smashingconf.com?subject=Smart Interface Design Patterns"
+                  >vitaly@smashingconf.com</a
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- ---------------- -->
+      </section>
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+      </section>
+      <section class="interests" id="interests">
+        <h2>interest</h2>
+      </section>
       <footer>
-        <a href="#home">go to top</a>
+        <p>
+          <a href="#home">go to top</a> Tribute to
+          <a href="https://fr.wikipedia.org/wiki/Hayao_Miyazaki">宮崎 駿</a>
+        </p>
       </footer>
     </div>
   </body>

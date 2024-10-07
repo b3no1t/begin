@@ -1,0 +1,31 @@
+/* 
+* GRID
+************ */
+
+/* Smart reset, 
+retire les margin et padding par défaut */
+*{
+ margin: 0;
+ padding: 0;
+}
+
+.grid-container{
+ background-color: #f6f6f6;
+ display: grid;
+
+ grid-template-columns: 150px 150px 150px 150px 150px ;
+
+ grid-template-rows:  150px 150px 150px;
+
+ gap: 1rem; /* 1rem = 16px */
+}
+
+.box{
+ overflow-x: scroll;
+}
+
+img{
+ /* rend la balise img RESPONSIVE */
+ width: 100%;
+ height: auto;
+}

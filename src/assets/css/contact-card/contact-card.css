@@ -1,144 +1,323 @@
 /* *
 * Contact-card.html
 ********************/
-:root{
- --spacing: 1.5rem;
- --color-primary:  #99998f;
- --color-secondary:  #e8e6bc;
- --color-tertiary:  #3b3b2f;
- --bgc-primary: #d8dcde;
- --bgc-secondary: #d8dcde;
-} 
+@layer defaults;
 
-*{
- margin:0;
- padding: 0;
- line-height: 1.4;
- scroll-behavior: smooth;
- 
+.c-creator__wrapper {
+  grid-gap: .5rem;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  display: grid;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
-body{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.c-creator__header {
+  grid-area: 1 / 1 / 1 / 6;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+  padding: 2rem;
+  margin: 2rem;
+  background-color: hsl(0, 88%, 29%);
 }
-p{
-margin-bottom: var(--spacing);
+
+.c-creator__image {
+  margin-left: -1rem;
+  margin-right: -1rem;
+  z-index: 1;
+  position: relative;
 }
-table{
- width: 100%;
+
+.c-creator__content {
+  grid-column: 6 / 13;
+  padding-block: 2rem;
+  padding-inline: 2rem;
+  margin-top: -8rem;
+  margin-left: 4rem;
+  position: relative;
+  z-index: 2;
+  background-color: white;
+  color: var(--primary-color);
+
+  font-size: 1.65rem;
+
 }
-img{
- width: 100%;
- height: auto;
+
+@layer defaults {
+  :root {
+
+
+    /* margin/padding */
+    --spacing: 1.5rem;
+
+    /* Color and gradient */
+
+    --hover-color: #a9907e;
+    --primary-color: #ff9671;
+    --secondary-color: #daf3ff;
+    --tertiary-color: #0050b6;
+    --header-bg: var(--secondary-color);
+    --geekdient-primary: to bottom, var(--tertiary-color), var(--primary-color), var(--secondary-color);
+    --wrapper: 1200px;
+
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    text-wrap: pretty;
+  }
+
+  .wrapper {
+    max-width: var(--wrapper);
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  section {
+    height: 100svh;
+    width: 100vw;
+    /* padding-top: 4rem;
+  margin-top: -2rem; */
+    background-color: #fff;
+
+  }
 }
-.home-text h3{
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+p {
+  margin-bottom: var(--spacing);
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  padding: 2rem;
+  background-color: var(--secondary-color);
+
+}
+
+table {
+  width: 100%;
+  font-size: 1.5rem;
+  z-index: 40;
+  position: relative;
+}
+
+.content {
+  width: 100vw;
+  height: 100dvh;
+}
+
+.content h3 {}
+
+.global {
+  position: relative;
+}
+
+
+/* 
+HOME SECTION -------------------------
+*/
+.home {
+  background-color: #0533e993;
+  background-image: url(../../img/jungle.png), linear-gradient(var(--geekdient-primary));
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+
+.h1 {
+  font-size: clamp(32px, 12vw, 500px);
+  line-height: .2;
+  font-weight: 900;
+  color: black;
+
+}
+
+.portrait__container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  /* z-index: var(--scene-primary); */
+
+}
+
+.portrait {
+
+  position: relative;
+}
+
+.portrait::before {
+  background-image: url(../../img/portraits/totoro.png);
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: 50% top;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.global{
- position: relative;
-}
-section {
-  height: 100vh;
-}
-section:nth-child(odd){
- background-color: var(--bgc-primary);
-}
-section
-.home{
- background-color: var( --color-secondary );
- position: absolute;
- z-index: 2;
-
-}
-.home-text{
-z-index: 4;
-position: relative;
-text-align: center;
-
-}
-.details{
- background-color: #F1F2F3;
- position: relative;
- z-index: 3;
- top: 100vh
+  left: 0;
+  top: -78lvh;
+  content: "";
+  width: 100vw;
+  height: 100dvh;
 }
 
-.portrait__container{
 
- z-index: 2;
-
-  
-}
-.tac{
- text-align: center;
-}
-.portrait{
- background-image: url(../../img/portraits/totoro.png);
- background-size: 50%;
- background-repeat: no-repeat;
- background-position: 50% top ;
- background-origin: content-box;
- width: 100vw;
- height: 100vh;
- position: absolute;
- top: 0;
-}
-main{
- z-index: 4;
- position: relative;
-}
-.h1{
- font-size: 12rem;
- width: 100vw;
- text-align: center;
- line-height: .2;
- font-weight: 900;
-
-}
-.h4{
- font-size: 9rem;
+h3 {
+  color: white;
+  font-weight: 900;
+  font-size: clamp(32px, 3rem, 12ch);
+  line-height: 0.8;
+  max-width: 12ch;
 
 }
 
-.details.wrapper{
- 
+.h4 {
+  font-size: clamp(32px, 7.5vw, 100vw);
+  color: white;
 }
-.details .container{
- width: 768px;
- margin: 0 auto;
+
+/* CTA ------------------------------- */
+
+.btn__cta {
+  text-transform: lowercase;
+  text-decoration: none;
+  background-color: white;
+  border-radius: .5rem;
+  padding-inline: var(--spacing);
+  /* aspect-ratio: 1; */
+  display: inline-block;
+  height: 10%;
+  font-size: 2rem;
 }
-.details h2{
- font-size: 4rem;
+
+.btn__cta {
+  animation: rotate 2s linear infinite paused;
+  transition: transform 1s ease-out;
 }
-.details p{
- font-size: 2.6rem;
+
+.btn__cta:hover {
+  animation-play-state: running;
+  transform: rotate(-.2turn);
+  color: blue;
+}
+
+@keyframes rotate {
+  to {
+    rotate: 1turn
+  }
+}
+
+
+/* 
+DETAILS SECTION ----------------------
+*/
+.details.wrapper {
+  background-color: #F1F2F3;
+  position: relative;
+  top: 100vh;
+  z-index: var(--scene-quartenary);
+}
+
+/* .details.wrapper{
+
+} */
+.details .container {
+  margin: 0 auto;
+
+}
+
+.details h2 {
+  font-size: 4rem;
+}
+
+.details p {
+  font-size: 2.6rem;
 }
 
 
 /* nav
 ---------------- */
-.menu{
- list-style: none;
- display: flex;
- justify-content: center;
- gap: 2rem;
- font-size: 2rem;
- text-transform: uppercase;
- z-index: 6;
- background-color: aliceblue;
- position: fixed;
- z-index: 9;
- top: 0;
- width: 100%;
+.navbar {
+  z-index: var(--scene-secondary);
+  position: fixed;
+  margin: var(--spacing);
+  z-index: 120;
+  position: fixed;
+
+  bottom: 0;
 }
-.menu a{
+
+.menu {
+  list-style: none;
+  flex-wrap: wrap;
+
+  text-transform: uppercase;
+  background-color: transparent;
+
+}
+
+.menu__item {}
+
+.menu__item a {
+
   text-decoration: none;
-  font-weight: 900;
-  color: var(--bgc-tertiary);
-  &:hover{
-    color: coral;
+  font-weight: 100;
+  color: white;
+  display: inline-block;
+  line-height: 1;
+  padding-left: .5rem;
+  padding-right: 1rem;
+  font-size: clamp(22px, 7vw, 64px);
+  transition: background-color .30s ease-out;
+  border-radius: .5rem;
+  ;
+
+  &:hover {
+    background-color: coral;
   }
+}
+
+section#details {
+  background-color: var(--secondary-color);
+}
+
+section#experiences {
+  background-color: var(--primary-color);
+}
+
+section#trainings {
+  background-color: var(--nav-color);
+}
+
+section#skills {
+  background-color: var(--nav-text);
+}
+
+section#interests {
+  background-color: var(--hover-color)
+}
+
+section#details,
+section#experiences,
+section#trainings,
+section#trainings,
+section#interests {
+  /* top: 100vh; */
 }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <title>CSS: GRID 🍿</title>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: repeat(3, 1fr);
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+      header,
+      aside,
+      main,
+      footer {
+        border: 1px solid coral;
+      }
+      header,
+      footer {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-column: 1/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <header>header</header>
+      <aside>aside</aside>
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+          unde nisi nam, quidem accusamus, optio voluptate totam debitis
+          blanditiis officia, vel provident culpa rerum cum. Repudiandae
+          architecto pariatur facilis eaque.
+        </p>
+      </main>
+      <aside>aside</aside>
+      <footer>footer</footer>
+    </div>
+  </body>
+</html>
